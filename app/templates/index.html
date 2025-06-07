@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secure API Test</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <h2>Secure API Tester</h2>
+
+  <div class="card">
+    <input id="secret" placeholder="Your secret key">
+    <input id="query" placeholder="Search term or city">
+
+    <select id="api">
+      <option value="pixabay">Pixabay</option>
+      <option value="unsplash">Unsplash</option>
+      <option value="weather">Weather</option>
+    </select>
+
+    <select id="media">
+      <option value="images">Images</option>
+      <option value="videos">Videos</option>
+    </select>
+
+    <button onclick="search()">Search</button>
+  </div>
+
+  <div id="output"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
+
